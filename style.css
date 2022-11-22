@@ -12,7 +12,7 @@ body {
   height: 100vh;
 }
 
-#rating-comp {
+.comp {
   display: flex;
   flex-direction: column;
   justify-content: center;
