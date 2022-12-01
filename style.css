@@ -23,43 +23,83 @@ body {
   padding: 30px;
 }
 
+svg {
+  margin: auto;
+}
+
+#star {
+  width: 15px;
+  height: 15px;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: hsl(214, 18%, 23%);
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
 .title {
   font-weight: 700;
   font-size:28px;
   color: hsl(0, 0%, 100%);
+  margin-bottom: 5px;
 }
 
 .text {
   font-size: 15px;
   color: hsl(217, 12%, 63%);
+  margin-bottom: 35px;
 }
 
-#radios .selected {
-  color: white;
-  background-color: hsl(25, 97%, 53%);
+#ratingButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
 }
 
-#radios label {
-  cursor: pointer;
-  position: relative;
-  color: hsl(217, 12%, 63%);
-  background-color: hsla(215, 13%, 28%, 0.739);
-  margin-left: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 15px;
-  padding-top: 15px;
+.ratingButton {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  background-color: hsl(214, 18%, 23%);
+  color: hsl(217, 12%, 63%);
+  position: relative;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-#radios label:hover {
+.ratingButton:hover {
+  background-color: hsl(25, 97%, 53%);
   color: white;
-  background-color: hsl(217, 12%, 63%);
+  transition: 0.3s ease-in-out;
 }
 
-input[type="radio"] {
-  opacity: 0; /* hidden but still tabable */
+.ratingButton:hover label {
+  color: white;
+}
+
+.ratingButton label {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.ratingButton input[type=radio] {
   position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.active {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
 }
 
 button {
@@ -79,6 +119,10 @@ button:hover {
   color:hsl(25, 97%, 53%);
 }
 
-#thank-you-comp {
+/* #thank-you-comp {
+  display: none;
+} */
+
+.none {
   display: none;
 }
