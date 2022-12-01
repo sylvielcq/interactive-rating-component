@@ -30,7 +30,7 @@
       <form>
         <div id="radios">
           <label for="rating-1" class="ratings">
-            <input type="radio" name="rating" value="1"/>
+            <input type="radio" name="rating" value="1" id="radio-1"/>
             <span>1</span>
           </label>
           <label for="rating-2" class="ratings">
@@ -51,9 +51,10 @@
           </label>
         </div>
         <div>
-          <button type="button" id="submit">SUBMIT</button>
+          <button type="submit" id="submit">SUBMIT</button>
         </div>
       </form>
+
 
     </div>
 
@@ -64,7 +65,9 @@
 
     <div class="comp" id="thank-you-comp">
 
-      <p id="selection">You selected -Add rating here- out of 5</p>
+      
+
+      <p id="selection">You selected <span id="log"></span> out of 5</p>
 
       <p class="title">Thank you!</p>
 
