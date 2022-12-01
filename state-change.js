@@ -19,7 +19,7 @@ form.addEventListener("submit", (event) => {
   const data = new FormData(form);
   let output = "";
   for (const entry of data) {
-    output = `${output}${entry[0]}=${entry[1]}`;
+    output = `${entry[1]}`;
   }
   console.log(output);
   log.innerText = output;
@@ -28,17 +28,38 @@ form.addEventListener("submit", (event) => {
   false
 );
 
-// const radioBtns = document.getElementById("radios");
 
+const radioBtns = document.getElementById("radios");
+const radioBtn1 = document.getElementById("radio-1");
+const radioBtn2 = document.getElementById("radio-2");
+const radioBtn3 = document.getElementById("radio-3");
+const radioBtn4 = document.getElementById("radio-4");
+const radioBtn5 = document.getElementById("radio-5");
 
-// radioBtns.onclick = function() {
-//   console.log("radio btn clicked");
-//   // console.log(this.value);
+radioBtn1.onclick = function() {
+  radioBtns.classList.remove('selected');
+  radioBtn1.classList.add('selected');
+};
 
-// };
+radioBtn2.onclick = function() {
+  radioBtns.classList.remove('selected');
+  radioBtn2.classList.add('selected');
+};
 
+radioBtn3.onclick = function() {
+  radioBtns.classList.remove('selected');
+  radioBtn3.classList.add('selected');
+};
 
+radioBtn4.onclick = function() {
+  radioBtns.classList.remove('selected');
+  radioBtn4.classList.add('selected');
+};
 
+radioBtn5.onclick = function() {
+  radioBtns.classList.remove('selected');
+  radioBtn5.classList.add('selected');
+};
 
 // Add class to selected rating
 
