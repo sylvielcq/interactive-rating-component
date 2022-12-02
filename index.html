@@ -25,66 +25,62 @@
 
       <img
         src="images/icon-star.svg"
-        alt="star"
+        alt="icon-star"
         id="star"
-        class="round-space"
       />
     
       <p class="title">How did we do?</p>
-      <p class="text">Please let us know how we did with your support request. All feedback is appreciated 
-    to help us 
-    improve our offering!</p>
+      <p class="text">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
 
       <form>
         <div id="ratingButtons">
-        <div class="ratingButton">
-          <label for="rating-1" class="ratings">1</label>
-          <input type="radio" onclick="selectRating()" name="rating" value="1"/>
-        </div>
-        <div class="ratingButton">
-          <label for="rating-2" class="ratings">2</label>
-          <input type="radio" onclick="selectRating()" name="rating" value="2"/>
-        </div>
-        <div class="ratingButton">
-          <label for="rating-3" class="ratings">3</label>
-          <input type="radio" onclick="selectRating()" name="rating" value="3"/>
-        </div>
-        <div class="ratingButton">
-          <label for="rating-4" class="ratings">4</label>
-          <input type="radio" onclick="selectRating()" name="rating" value="4"/>
-        </div>
-        <div class="ratingButton">
-          <label for="rating-5" class="ratings">5</label>
-          <input type="radio" onclick="selectRating()" name="rating" value="5"/>
-        </div>
+          <div class="ratingButton">
+            <label for="rating-1" class="ratings">1</label>
+            <input type="radio" onclick="selectRating()" name="rating" value="1"/>
+          </div>
+          <div class="ratingButton">
+            <label for="rating-2" class="ratings">2</label>
+            <input type="radio" onclick="selectRating()" name="rating" value="2"/>
+          </div>
+          <div class="ratingButton">
+            <label for="rating-3" class="ratings">3</label>
+            <input type="radio" onclick="selectRating()" name="rating" value="3"/>
+          </div>
+          <div class="ratingButton">
+            <label for="rating-4" class="ratings">4</label>
+            <input type="radio" onclick="selectRating()" name="rating" value="4"/>
+          </div>
+          <div class="ratingButton">
+            <label for="rating-5" class="ratings">5</label>
+            <input type="radio" onclick="selectRating()" name="rating" value="5"/>
+          </div>
         </div>
         <div>
           <button type="submit" id="submit" onclick="displayRating(event)">SUBMIT</button>
         </div>
       </form>
 
-
     </div>
-
 
   <!-- Rating state end -->
 
+
+
   <!-- Thank you state start -->
 
-    <div class="comp none" id="thank-you-comp">
+    <div class="comp thank-you none" id="thank-you-comp">
 
       <img
         src="images/illustration-thank-you.svg"
         alt="thank-you-img"
         id="ty-img"
-        class="ty"
       />
 
       <p id="selection">You selected <span id="selected-rating"></span> out of 5</p>
 
-      <p class="title">Thank you!</p>
+      <p class="title" id="ty-title">Thank you!</p>
 
-      <p class="text">We appreciate you taking the time to give a rating. If you ever need more support, 
+      <p class="text" id="ty-text">We appreciate you taking the time to give a rating.<br> If you ever need more support, 
       don't hesitate to get in touch!</p>
 
     </div>
@@ -92,14 +88,6 @@
   <!-- Thank you state end -->
 
   </main>
-
-  <!--
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-  -->
-
-  <script src="script.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
