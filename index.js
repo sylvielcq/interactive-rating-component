@@ -19,6 +19,12 @@ const selectRating = () => {
 
 const displayRating = (event) => {
   event.preventDefault();
+
+  if (!rating) {
+    alert("Please select a rating.");
+    return;
+  }
+
   ratingComp.classList.toggle("none");
   thankYouComp.classList.toggle("none");
   selectedRating.innerHTML = rating;
