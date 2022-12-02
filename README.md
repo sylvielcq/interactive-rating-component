@@ -15,7 +15,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Gif](./images/interactive-rating-component.gif)
+![Gif](https://github.com/sylvielcq/interactive-rating-component/blob/main/images/interactive-rating-comp.gif)
 
 ### Links
 
